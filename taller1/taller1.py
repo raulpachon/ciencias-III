@@ -28,8 +28,8 @@ def resp(arbol):
 
 def evaluar(arbol):
     
-    if arbol.valor in "abcdefghijklmnopqrstuvwxyz":
-        return diccionario[arbol.valor]
+    if arbol == None:
+        pass
     if arbol.valor == "+":
         return evaluar(arbol.izq) + evaluar(arbol.der)
     if arbol.valor == "-":
